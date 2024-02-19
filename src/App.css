@@ -1,0 +1,14 @@
+.App {
+  margin: 50px;
+  font-family: sans-serif;
+  text-align: start;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  padding: 0.5rem;
+}
