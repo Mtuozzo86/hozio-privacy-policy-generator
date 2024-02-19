@@ -8,7 +8,7 @@ export default function App() {
   const [country, setCountry] = useState("[Country]");
   const [nakedDomain, setNakedDomain] = useState("[Naked Domain]");
   const [contactPageURL, setContactPageURL] = useState("[Contact Page URL]");
-  const [copy, setCopy] = useState("");
+  const [copy, setCopy] = useState("Copy");
   const privacyContentRef = useRef(null);
 
   function handleCopy() {
@@ -89,7 +89,7 @@ export default function App() {
         </div>
       </form>
       <div className="privacy-policy">
-        <button onClick={handleCopy}>Copy</button>
+        <button className={copy === 'Copied!' ? 'copied-style' : ''} onClick={handleCopy}>{copy}</button>
         <div ref={privacyContentRef} id="privacy-content">
           <h1>Privacy Policy</h1>
           <p>

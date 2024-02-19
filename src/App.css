@@ -39,3 +39,7 @@ form div {
 button {
   padding: 10px 25px;
 }
+
+.copied-style{
+  background-color: #00ff00;
+}
