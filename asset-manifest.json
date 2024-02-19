@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hozio-privacy-policy-generator/static/css/main.02cda946.css",
-    "main.js": "/hozio-privacy-policy-generator/static/js/main.bedb12e7.js",
+    "main.js": "/hozio-privacy-policy-generator/static/js/main.a4c5a477.js",
     "static/js/453.220cd787.chunk.js": "/hozio-privacy-policy-generator/static/js/453.220cd787.chunk.js",
     "index.html": "/hozio-privacy-policy-generator/index.html",
     "main.02cda946.css.map": "/hozio-privacy-policy-generator/static/css/main.02cda946.css.map",
-    "main.bedb12e7.js.map": "/hozio-privacy-policy-generator/static/js/main.bedb12e7.js.map",
+    "main.a4c5a477.js.map": "/hozio-privacy-policy-generator/static/js/main.a4c5a477.js.map",
     "453.220cd787.chunk.js.map": "/hozio-privacy-policy-generator/static/js/453.220cd787.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02cda946.css",
-    "static/js/main.bedb12e7.js"
+    "static/js/main.a4c5a477.js"
   ]
 }
