@@ -11,67 +11,69 @@ export default function App() {
 
   function handleSubmit(params) {
     params.preventDefault();
-    console.log("...");
   }
 
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
-        <label>
-          Company Name:
-          <input
-            type="text"
-            name="name"
-            onChange={(e) => setCompany(e.target.value)}
-            value={company}
-          />
-        </label>
-        <label>
-          County:
-          <input
-            type="text"
-            name="name"
-            onChange={(e) => setCounty(e.target.value)}
-            value={county}
-          />
-        </label>
-        <label>
-          State:
-          <input
-            type="text"
-            name="name"
-            onChange={(e) => setState(e.target.value)}
-            value={state}
-          />
-        </label>
-        <label>
-          Country:
-          <input
-            type="text"
-            name="name"
-            onChange={(e) => setCountry(e.target.value)}
-            value={country}
-          />
-        </label>
-        <label>
-          Naked Domain:
-          <input
-            type="text"
-            name="name"
-            onChange={(e) => setNakedDomain(e.target.value)}
-            value={nakedDomain}
-          />
-        </label>
-        <label>
-          Contact Page URL:
-          <input
-            type="text"
-            name="name"
-            onChange={(e) => setContactPageURL(e.target.value)}
-            value={contactPageURL}
-          />
-        </label>
-        <input type="submit" value="Submit" />
+        <div>
+          <label>
+            Company Name:
+            <input
+              type="text"
+              name="name"
+              onChange={(e) => setCompany(e.target.value)}
+              placeholder="Company"
+            />
+          </label>
+          <label>
+            County:
+            <input
+              type="text"
+              name="name"
+              onChange={(e) => setCounty(e.target.value)}
+              placeholder="County"
+            />
+          </label>
+          <label>
+            State:
+            <input
+              type="text"
+              name="name"
+              onChange={(e) => setState(e.target.value)}
+              placeholder="State"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Country:
+            <input
+              type="text"
+              name="name"
+              onChange={(e) => setCountry(e.target.value)}
+              placeholder="Country"
+            />
+          </label>
+          <label>
+            Naked Domain:
+            <input
+              type="text"
+              name="name"
+              onChange={(e) => setNakedDomain(e.target.value)}
+              placeholder="domain.com"
+            />
+          </label>
+          <label>
+            Contact Page URL:
+            <input
+              type="text"
+              name="name"
+              onChange={(e) => setContactPageURL(e.target.value)}
+              placeholder="Contact Page URL"
+            />
+          </label>
+        </div>
       </form>
       <h1>Privacy Policy</h1>
       <p>
