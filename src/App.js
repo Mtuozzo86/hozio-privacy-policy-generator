@@ -83,7 +83,7 @@ export default function App() {
               type="text"
               name="name"
               onChange={(e) => setContactPageURL(e.target.value)}
-              placeholder="Contact Page URL"
+              placeholder="domain.com/contact"
             />
           </label>
         </div>
