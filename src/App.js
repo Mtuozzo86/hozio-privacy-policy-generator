@@ -26,7 +26,6 @@ export default function App() {
     params.preventDefault();
   }
 
-
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
@@ -189,7 +188,9 @@ export default function App() {
             <li>
               <p>
                 <strong>Website</strong> refers to {company}, accessible from{" "}
-                {nakedDomain}
+                <a rel="nofollow" href={`https://${nakedDomain}`}>
+                  {nakedDomain}
+                </a>
               </p>
             </li>
             <li>
@@ -633,7 +634,12 @@ export default function App() {
             us:
           </p>
           <ul>
-            <li>By visiting this page on our website: {contactPageURL}</li>
+            <li>
+              By visiting this page on our website:{" "}
+              <a rel="nofollow" href={`https://${contactPageURL}`}>
+                {contactPageURL}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
