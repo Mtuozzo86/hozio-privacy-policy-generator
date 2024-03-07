@@ -6,7 +6,7 @@ export default function App() {
   const [state, setState] = useState("[State]");
   const [county, setCounty] = useState("[County]");
   const [country, setCountry] = useState("[Country]");
-  const [nakedDomain, setNakedDomain] = useState("[Naked Domain]");
+  const [domain, setDomain] = useState("[Final Domain]");
   const [contactPageURL, setContactPageURL] = useState("[Contact Page URL]");
   const [copy, setCopy] = useState("Copy");
   const privacyContentRef = useRef(null);
@@ -69,12 +69,12 @@ export default function App() {
             />
           </label>
           <label>
-            Naked Domain:
+            Final Domain (check for www's):
             <input
               type="text"
               name="name"
-              onChange={(e) => setNakedDomain(e.target.value)}
-              placeholder="domain.com"
+              onChange={(e) => setDomain(e.target.value)}
+              placeholder="https://www.DOMAIN.COM or https://DOMAIN.COM"
             />
           </label>
           <label>
@@ -83,7 +83,7 @@ export default function App() {
               type="text"
               name="name"
               onChange={(e) => setContactPageURL(e.target.value)}
-              placeholder="domain.com/contact"
+              placeholder="https://www.DOMAIN.com/contact-page-url"
             />
           </label>
         </div>
@@ -188,8 +188,8 @@ export default function App() {
             <li>
               <p>
                 <strong>Website</strong> refers to {company}, accessible from{" "}
-                <a rel="nofollow" href={`https://${nakedDomain}`}>
-                  {nakedDomain}
+                <a rel="nofollow" href={domain}>
+                  {domain}
                 </a>
               </p>
             </li>
@@ -636,7 +636,7 @@ export default function App() {
           <ul>
             <li>
               By visiting this page on our website:{" "}
-              <a rel="nofollow" href={`https://${contactPageURL}`}>
+              <a rel="nofollow" href={contactPageURL}>
                 {contactPageURL}
               </a>
             </li>
