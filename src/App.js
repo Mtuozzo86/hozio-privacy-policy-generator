@@ -187,7 +187,7 @@ export default function App() {
             </li>
             <li>
               <p>
-                <strong>Website</strong> refers to {company}, accessible from{" "}
+                <strong>Website</strong> refers to {company}, accessible from:{" "}<br />
                 <a rel="nofollow" href={domain}>
                   {domain}
                 </a>
@@ -635,8 +635,8 @@ export default function App() {
           </p>
           <ul>
             <li>
-              By visiting this page on our website:{" "}
-              <a rel="nofollow" href={contactPageURL}>
+              By visiting this page on our website:{" "}<br />
+              <a rel="follow" href={contactPageURL}>
                 {contactPageURL}
               </a>
             </li>
